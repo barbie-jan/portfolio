@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Barbie Mahajan · Cybersecurity Professional</title>
-<meta name="description" content="Barbie Mahajan — Bachelor of Cybersecurity student and professional with hands-on experience in privacy, compliance and systems coordination.">
+<meta name="description" content="Barbie Mahajan — Bachelor of Cybersecurity student with hands-on coursework in digital forensics, malware analysis, network security and ethical hacking, plus real capstone project experience.">
 <meta name="author" content="Barbie Mahajan">
 <meta name="theme-color" content="#0b0f1a">
 <meta property="og:title" content="Barbie Mahajan · Cybersecurity Professional">
-<meta property="og:description" content="Bachelor of Cybersecurity student and professional, building on real-world experience in privacy, compliance and systems coordination.">
+<meta property="og:description" content="Bachelor of Cybersecurity student with hands-on coursework in digital forensics, malware analysis, network security and ethical hacking, plus real capstone project experience.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%236366f1'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,7 +81,7 @@
   html[data-theme="light"] nav{background:rgba(255,255,255,0.7);}
   .brand{display:flex; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-weight:700; font-size:1.05rem;}
   .brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent)); box-shadow:0 0 12px var(--primary);}
-  .nav-links{display:flex; gap:1.75rem; list-style:none;}
+  .nav-links{display:flex; gap:1.6rem; list-style:none;}
   .nav-links a{
     font-size:.92rem; font-weight:500; color:var(--text-dim); text-decoration:none;
     position:relative; padding:4px 0; transition:color .25s ease;
@@ -136,7 +136,7 @@
   .role-line{font-size:clamp(1.1rem,2.4vw,1.5rem); font-weight:600; color:var(--text-dim); margin-bottom:28px; min-height:2.2em;}
   .role-line .cursor{display:inline-block; width:2px; background:var(--accent); margin-left:2px; animation:blink 1s step-end infinite;}
   @keyframes blink{50%{opacity:0;}}
-  .hero-desc{max-width:640px; color:var(--text-dim); font-size:1.05rem; margin-bottom:36px;}
+  .hero-desc{max-width:660px; color:var(--text-dim); font-size:1.05rem; margin-bottom:36px;}
   .hero-cta{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:56px;}
   .btn{
     display:inline-flex; align-items:center; gap:10px; padding:13px 26px; border-radius:12px;
@@ -188,7 +188,7 @@
   .info-row .txt a{text-decoration:none; transition:color .2s;}
   .info-row .txt a:hover{color:var(--primary);}
 
-  /* Focus grid (cybersecurity domains) */
+  /* Coursework grid */
   .focus-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
   .focus-card{
     background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:26px;
@@ -200,6 +200,7 @@
     display:flex; align-items:center; justify-content:center; margin-bottom:18px;
   }
   .focus-icon svg{width:21px;height:21px; color:#fff;}
+  .focus-card .unit-code{font-size:.72rem; font-weight:700; letter-spacing:.08em; color:var(--accent); text-transform:uppercase; margin-bottom:6px;}
   .focus-card h3{font-size:1.05rem; font-weight:700; margin-bottom:10px;}
   .focus-card p{color:var(--text-dim); font-size:.92rem;}
 
@@ -217,12 +218,16 @@
     font-size:.75rem; font-weight:700; color:var(--text); background:var(--surface-solid);
     border:1px solid var(--border); padding:6px 14px; border-radius:999px; white-space:nowrap;
   }
-  .project-desc{color:var(--text-dim); font-size:.98rem; margin-bottom:20px; max-width:700px;}
+  .project-desc{color:var(--text-dim); font-size:.98rem; margin-bottom:18px; max-width:720px;}
+  .project-highlights{list-style:none; margin-bottom:20px;}
+  .project-highlights li{position:relative; padding-left:22px; margin-bottom:10px; color:var(--text-dim); font-size:.95rem; max-width:720px;}
+  .project-highlights li::before{content:'';position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:2px; background:var(--accent); transform:rotate(45deg);}
   .project-tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px;}
   .tech-tag{
     font-size:.78rem; font-weight:600; color:var(--text-dim); background:var(--surface-solid);
     border:1px solid var(--border); padding:5px 12px; border-radius:999px;
   }
+  .tech-tag.outcome{color:var(--accent-2); border-color:rgba(52,211,153,0.3);}
   .project-footer{display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;}
   .project-link{
     display:inline-flex; align-items:center; gap:8px; font-size:.9rem; font-weight:600; color:var(--text);
@@ -249,26 +254,26 @@
   .tl-dot.current::after{background:var(--accent-2);}
   .tl-card{
     background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
-    padding:28px 30px; transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+    padding:26px 28px; transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
   }
   .tl-card:hover{transform:translateX(6px); border-color:var(--primary); box-shadow:var(--shadow);}
   .tl-top{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:6px;}
-  .tl-role{font-size:1.2rem; font-weight:700;}
-  .tl-org{color:var(--primary-2); font-weight:600; font-size:.95rem; margin-top:2px;}
+  .tl-role{font-size:1.1rem; font-weight:700;}
+  .tl-org{color:var(--primary-2); font-weight:600; font-size:.92rem; margin-top:2px;}
   .tl-period{
-    font-size:.78rem; font-weight:700; color:var(--text); background:var(--surface-solid);
-    border:1px solid var(--border); padding:6px 14px; border-radius:999px; white-space:nowrap;
+    font-size:.76rem; font-weight:700; color:var(--text); background:var(--surface-solid);
+    border:1px solid var(--border); padding:5px 13px; border-radius:999px; white-space:nowrap;
   }
   .tl-period.current{background:linear-gradient(135deg,var(--accent-2),var(--accent)); color:#04241d; border-color:transparent;}
-  .tl-duration{font-size:.78rem; color:var(--text-faint); margin-top:6px; margin-bottom:14px; font-weight:500;}
-  .tl-list{list-style:none; margin-bottom:16px;}
-  .tl-list li{position:relative; padding-left:22px; margin-bottom:10px; color:var(--text-dim); font-size:.96rem;}
-  .tl-list li::before{content:'';position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:2px; background:var(--accent); transform:rotate(45deg);}
+  .tl-duration{font-size:.76rem; color:var(--text-faint); margin-top:6px; margin-bottom:12px; font-weight:500;}
+  .tl-list{list-style:none; margin-bottom:14px;}
+  .tl-list li{position:relative; padding-left:22px; margin-bottom:8px; color:var(--text-dim); font-size:.9rem;}
+  .tl-list li::before{content:'';position:absolute; left:0; top:8px; width:6px; height:6px; border-radius:2px; background:var(--accent); transform:rotate(45deg);}
   .tl-relevance{
-    display:inline-flex; align-items:center; gap:7px; font-size:.78rem; font-weight:600; color:var(--accent);
-    background:rgba(34,211,238,0.08); border:1px solid rgba(34,211,238,0.28); padding:6px 14px; border-radius:999px;
+    display:inline-flex; align-items:center; gap:7px; font-size:.76rem; font-weight:600; color:var(--accent);
+    background:rgba(34,211,238,0.08); border:1px solid rgba(34,211,238,0.28); padding:5px 13px; border-radius:999px;
   }
-  .tl-relevance svg{width:13px;height:13px;}
+  .tl-relevance svg{width:12px;height:12px;}
 
   /* Skills */
   .filter-chips{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:32px;}
@@ -304,8 +309,9 @@
   .edu-icon svg{width:30px;height:30px;color:#fff;}
   .edu-degree{font-size:1.3rem; font-weight:700;}
   .edu-inst{color:var(--primary-2); font-weight:600; margin-top:2px;}
-  .edu-note{color:var(--text-dim); margin-top:10px; font-size:.95rem; max-width:620px;}
-  .edu-tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
+  .edu-note{color:var(--text-dim); margin-top:10px; font-size:.95rem; max-width:640px;}
+  .edu-subhead{font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); margin-top:20px; margin-bottom:10px;}
+  .edu-tags{display:flex; flex-wrap:wrap; gap:8px;}
   .edu-tag{
     font-size:.78rem; font-weight:600; color:var(--text-dim); background:var(--surface-solid);
     border:1px solid var(--border); padding:5px 12px; border-radius:999px;
@@ -388,11 +394,11 @@
   <div class="brand"><span class="dot"></span> Barbie Mahajan</div>
   <ul class="nav-links">
     <li><a href="#about" data-nav>About</a></li>
-    <li><a href="#focus" data-nav>Focus Areas</a></li>
-    <li><a href="#experience" data-nav>Experience</a></li>
-    <li><a href="#projects" data-nav>Projects</a></li>
+    <li><a href="#coursework" data-nav>Coursework</a></li>
+    <li><a href="#projects" data-nav>Capstone</a></li>
     <li><a href="#skills" data-nav>Skills</a></li>
     <li><a href="#education" data-nav>Education</a></li>
+    <li><a href="#experience" data-nav>Experience</a></li>
     <li><a href="#contact" data-nav>Contact</a></li>
   </ul>
   <div class="nav-right">
@@ -407,11 +413,11 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about">About</a>
-  <a href="#focus">Focus Areas</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
+  <a href="#coursework">Coursework</a>
+  <a href="#projects">Capstone</a>
   <a href="#skills">Skills</a>
   <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
 </div>
 
@@ -420,10 +426,10 @@
   <div class="hero-glow"></div>
   <div class="hero-glow two"></div>
   <div class="hero-inner">
-    <span class="eyebrow"><span class="pulse"></span> Cybersecurity · Governance · Compliance</span>
+    <span class="eyebrow"><span class="pulse"></span> Digital Forensics · Malware Analysis · Ethical Hacking</span>
     <h1 class="name">Barbie Mahajan</h1>
     <div class="role-line"><span id="typedRole"></span><span class="cursor" id="typeCursor">&nbsp;</span></div>
-    <p class="hero-desc">Bachelor of Cybersecurity student with a working foundation in governance &amp; risk, data privacy, identity &amp; access management, and security operations — grounded in real-world experience handling confidential information, following compliance standards, and resolving problems under pressure in fast-paced coordination roles.</p>
+    <p class="hero-desc">Bachelor of Cybersecurity student with hands-on coursework across digital forensics, malware analysis, advanced network security, network forensics and ethical hacking — most recently applied in a real, multi-team capstone project where I found and fixed a release-critical data bug and independently flagged a security misconfiguration outside my own assigned scope.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="mailto:barbiemahajan721@gmail.com">
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"></path><path d="M2 6h20v12H2z"></path></svg>
@@ -439,10 +445,10 @@
       </button>
     </div>
     <div class="stats-row">
+      <div class="stat"><div class="num">5</div><div class="label">Cybersecurity Units Completed</div></div>
+      <div class="stat"><div class="num">7</div><div class="label">Capstone Tickets Delivered</div></div>
       <div class="stat"><div class="num" id="statTotalExp">—</div><div class="label">Professional Experience</div></div>
-      <div class="stat"><div class="num">6</div><div class="label">Cybersecurity Focus Areas</div></div>
       <div class="stat"><div class="num">3</div><div class="label">Organisations &amp; Teams</div></div>
-      <div class="stat"><div class="num">4</div><div class="label">Skill Areas</div></div>
     </div>
   </div>
 </header>
@@ -455,9 +461,9 @@
     </div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a <strong>Bachelor of Cybersecurity</strong> student with a genuine interest in how organisations protect their people, data and systems. My coursework spans <strong>governance &amp; risk management, data privacy, identity &amp; access management, network security and security operations</strong> — the disciplines that sit at the core of modern security practice.</p>
-        <p>Alongside my studies, I coordinate staff scheduling and rostering across aged care and healthcare environments. It isn't a security role on paper, but it has quietly built exactly the instincts security work demands: handling confidential information with discretion, following documentation and compliance procedures precisely, and staying calm while resolving problems fast.</p>
-        <p>I see the two as connected, not separate — <strong>attention to detail, accountability, and clear communication under pressure</strong> are the same qualities that make a strong security professional, and I bring both the academic grounding and the practical habits to the table.</p>
+        <p>I'm a <strong>Bachelor of Cybersecurity</strong> student whose coursework has taken me through five hands-on technical units — <strong>digital forensics, malware analysis, advanced network security, network forensics and ethical hacking</strong> — each built around real investigative and technical work rather than theory alone.</p>
+        <p>In my capstone project, I worked on the <strong>Database Team</strong> of a real, multi-team software project for Gopher Industries, delivering seven tickets end-to-end. I found and fixed a release-critical data bug that the team's own tests had missed, and independently flagged an <strong>unrestricted Firestore security rule</strong> outside my own ticket scope — the kind of finding-and-proving-it discipline I want to keep building a career around.</p>
+        <p>Alongside my studies, I also coordinate staff scheduling in healthcare settings — work that has sharpened the same habits of accuracy, confidentiality and calm problem-solving under pressure that show up throughout my coursework and capstone work, even though it isn't a security role on paper.</p>
       </div>
       <div class="info-card reveal">
         <div class="info-row">
@@ -473,106 +479,58 @@
           <div class="txt"><div class="k">Studying</div><div class="v">Bachelor of Cybersecurity</div></div>
         </div>
         <div class="info-row">
-          <div class="icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"></path><circle cx="18" cy="18" r="3"></circle><path d="M18 16.5V18l1 1"></path></svg></div>
-          <div class="txt"><div class="k">Current Role</div><div class="v">Schedule Coordinator, Nurse 4 U</div></div>
+          <div class="icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></div>
+          <div class="txt"><div class="k">Capstone</div><div class="v">SIT782 – Team Project (B)</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="focus">
+  <section id="coursework">
     <div class="section-head reveal">
-      <span class="section-tag">The cybersecurity profession</span>
-      <h2>Where My Studies Are Taking Me</h2>
-      <p>My Bachelor of Cybersecurity covers the core domains that make up the profession. Here's how each area connects to the field — and, in several cases, to skills I already practise day to day.</p>
+      <span class="section-tag">Bachelor of Cybersecurity</span>
+      <h2>Coursework</h2>
+      <p>Five practical, technical units — each unit code links to real, submitted work: investigation reports, malware analysis writeups, and hands-on labs.</p>
     </div>
     <div class="focus-grid">
       <div class="focus-card reveal">
-        <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-        <h3>Governance, Risk &amp; Compliance</h3>
-        <p>How organisations set security policy, assess risk and stay compliant with standards — echoed in the documentation and privacy procedures I already follow in healthcare rostering.</p>
-      </div>
-      <div class="focus-card reveal">
-        <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
-        <h3>Data Privacy &amp; Protection</h3>
-        <p>Protecting sensitive information from exposure or misuse — directly aligned with my daily handling of confidential employee and client records.</p>
-      </div>
-      <div class="focus-card reveal">
-        <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
-        <h3>Identity &amp; Access Management</h3>
-        <p>Controlling who can access what, and when — a natural extension of coordinating staff availability, coverage and permissions in rostering systems.</p>
+        <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+        <div class="unit-code">SIT282</div>
+        <h3>Computer Forensics &amp; Investigations</h3>
+        <p>Digital forensics case studies, including a password-recovery investigation and a full forensic case-study report — evidence handling and investigative write-ups.</p>
       </div>
       <div class="focus-card reveal">
         <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
-        <h3>Security Operations &amp; Incident Response</h3>
-        <p>How teams detect, respond to and resolve incidents — the same muscle I use resolving urgent coverage gaps and scheduling conflicts under time pressure.</p>
+        <div class="unit-code">SIT324</div>
+        <h3>Malware Analysis</h3>
+        <p>Static and dynamic malware analysis using Ghidra, plus a campaign report mapping real malware behaviour to the MITRE ATT&amp;CK framework.</p>
       </div>
       <div class="focus-card reveal">
         <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
-        <h3>Network &amp; Systems Security</h3>
-        <p>The technical foundations of how systems and networks are defended against threats — the more technical side of the degree I'm building toward.</p>
+        <div class="unit-code">SIT325</div>
+        <h3>Advanced Network Security</h3>
+        <p>Applied network security labs backed by custom Python automation scripts for security tasks and structured data analysis.</p>
       </div>
       <div class="focus-card reveal">
-        <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div>
-        <h3>Security Awareness &amp; Human Factors</h3>
-        <p>The human side of security — communication, training and behaviour — skills I already practise coordinating with staff and stakeholders every day.</p>
+        <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
+        <div class="unit-code">SIT327</div>
+        <h3>Network Forensics</h3>
+        <p>Network-level forensic investigation techniques — tracing and reconstructing activity across network traffic and logs.</p>
       </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="section-head reveal">
-      <span class="section-tag">Career journey</span>
-      <h2>Experience</h2>
-      <p>Duration is calculated automatically from each role's start date to today. Each role also shows how it connects back to cybersecurity practice.</p>
-    </div>
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-dot current"></div>
-        <div class="tl-card">
-          <div class="tl-top">
-            <div><div class="tl-role">Schedule Coordinator</div><div class="tl-org">Nurse 4 U</div></div>
-            <div class="tl-period current" data-start="2026-01-01" data-end="present">Jan 2026 — Present</div>
-          </div>
-          <div class="tl-duration" data-duration data-start="2026-01-01" data-end="present"></div>
-          <ul class="tl-list">
-            <li>Coordinate daily and forward schedules to support reliable workforce coverage and continuity of care</li>
-            <li>Respond promptly to staff availability changes, leave, cancellations and urgent shift requirements</li>
-            <li>Communicate roster updates clearly with employees, clients and relevant internal teams</li>
-            <li>Maintain accurate scheduling records, employee availability and shift information in rostering systems</li>
-            <li>Identify coverage gaps and resolve conflicts while considering operational priorities</li>
-            <li>Follow organisational procedures, privacy requirements and documentation standards</li>
-          </ul>
-          <span class="tl-relevance"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Relevant to: Data Privacy &amp; Access Coordination</span>
-        </div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-top">
-            <div><div class="tl-role">Rostering Coordinator</div><div class="tl-org">Royal Freemasons Coppin Centre</div></div>
-            <div class="tl-period" data-start="2024-06-01" data-end="2026-01-01">Jun 2024 — Jan 2026</div>
-          </div>
-          <div class="tl-duration" data-duration data-start="2024-06-01" data-end="2026-01-01"></div>
-          <ul class="tl-list">
-            <li>Prepared and maintained staff rosters to meet service needs and support appropriate shift coverage</li>
-            <li>Managed shift changes, replacements, leave requests and short-notice absences in a fast-paced environment</li>
-            <li>Liaised professionally with staff and managers regarding availability, allocations and roster updates</li>
-            <li>Monitored roster accuracy and helped minimise scheduling conflicts, gaps and unnecessary overtime</li>
-            <li>Maintained confidential employee and scheduling information with accuracy and discretion</li>
-            <li>Assisted with administrative tasks, reports and record updates to support workforce operations</li>
-          </ul>
-          <span class="tl-relevance"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Relevant to: Documentation, Compliance &amp; Confidentiality</span>
-        </div>
+      <div class="focus-card reveal">
+        <div class="focus-icon"><svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+        <div class="unit-code">SIT379</div>
+        <h3>Ethical Hacking</h3>
+        <p>A ten-module, hands-on penetration testing programme covering reconnaissance through exploitation using real ethical hacking methodology.</p>
       </div>
     </div>
   </section>
 
   <section id="projects">
     <div class="section-head reveal">
-      <span class="section-tag">Applied work</span>
-      <h2>Projects</h2>
-      <p>Hands-on work beyond the classroom, applying cybersecurity-adjacent thinking to a real, multi-team codebase.</p>
+      <span class="section-tag">Applied work · SIT782</span>
+      <h2>Capstone Project</h2>
+      <p>My capstone — a real, multi-team software project, not a simulated exercise — is the clearest evidence of how I work in practice.</p>
     </div>
     <div class="project-card reveal">
       <div class="project-top">
@@ -581,20 +539,27 @@
             <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             Food Remedy API
           </div>
-          <div class="project-org">Gopher Industries · Capstone Project</div>
+          <div class="project-org">Gopher Industries · SIT782 – Team Project (B): Execution &amp; Delivery</div>
         </div>
         <span class="project-badge">T1 2026</span>
       </div>
-      <p class="project-desc">A mobile-first platform helping consumers make informed dietary choices by scanning supermarket products for nutritional data, allergen warnings and dietary compatibility. Built by a multi-team capstone group (frontend, backend/database, design and leadership sub-teams), which I actively contributed to as part of my Bachelor of Cybersecurity capstone requirement.</p>
+      <p class="project-desc">A mobile-first platform helping consumers make informed dietary choices by scanning supermarket products for nutritional data, allergen warnings and dietary compatibility. I started on the Backend Team with a planned security-analyst contribution, then moved into the <strong>Database Team</strong> for data-integrity work partway through the trimester — communicating the change proactively and delivering seven tickets end-to-end (DB011, DB013, DB021, DB025, DB038-2, DB030, DB056), each backed by a structured pull request and, for investigation-heavy tickets, a full written report with evidence and prioritised recommendations.</p>
+      <ul class="project-highlights">
+        <li>Found and fixed a <strong>release-critical bug</strong> in the product-data cleaning pipeline that the team's own tests had missed — verified directly against real committed project data and confirmed by an executed regression test suite.</li>
+        <li>Independently flagged an <strong>unrestricted Firestore security rule</strong> outside my own ticket scope, and resolved two separate ticket-ID collisions on the team's planning board before they caused conflicts.</li>
+        <li>Wrote evidence-based investigation reports for each defect, treating every finding as something to be proven against real data rather than assumed.</li>
+      </ul>
       <div class="project-tags">
         <span class="tech-tag">React Native (Expo)</span>
         <span class="tech-tag">Firebase (Firestore &amp; Auth)</span>
         <span class="tech-tag">JavaScript</span>
         <span class="tech-tag">Python</span>
         <span class="tech-tag">Docker</span>
+        <span class="tech-tag">Git / PR Workflow</span>
+        <span class="tech-tag outcome">Self-Assessed: Distinction</span>
       </div>
       <div class="project-footer">
-        <span class="tl-relevance"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> Relevant to: Data Privacy &amp; Identity Management</span>
+        <span class="tl-relevance"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Relevant to: Security Misconfiguration Review &amp; Data Integrity</span>
         <a class="project-link" href="https://github.com/Gopher-Industries/Food-Remedy_API" target="_blank" rel="noopener noreferrer">
           View Repository
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -607,7 +572,7 @@
     <div class="section-head reveal">
       <span class="section-tag">What I bring</span>
       <h2>Skills</h2>
-      <p>Filter by category — security and compliance skills lead, backed by the technical, operational and communication skills that support them.</p>
+      <p>Filter by category — security and technical skills lead, backed by the coordination and communication skills that support them.</p>
     </div>
     <div class="filter-chips reveal" id="chips">
       <button class="chip active" data-filter="all">All</button>
@@ -631,13 +596,57 @@
       <div>
         <div class="edu-degree">Bachelor of Cybersecurity</div>
         <div class="edu-inst">Deakin University</div>
-        <div class="edu-note">Coursework spanning governance &amp; risk management, data privacy and protection, identity &amp; access management, network and systems security, and security operations — building the technical and analytical foundation for a career protecting organisations from digital threats.</div>
+        <div class="edu-note">Practical, technical units covering digital forensics, malware analysis, network security, network forensics and ethical hacking, culminating in a capstone project applying that training to a real production codebase.</div>
+        <div class="edu-subhead">Units Completed</div>
         <div class="edu-tags">
-          <span class="edu-tag">Governance, Risk &amp; Compliance</span>
-          <span class="edu-tag">Data Privacy</span>
-          <span class="edu-tag">Identity &amp; Access Management</span>
-          <span class="edu-tag">Network Security</span>
-          <span class="edu-tag">Security Operations</span>
+          <span class="edu-tag">SIT282 – Computer Forensics &amp; Investigations</span>
+          <span class="edu-tag">SIT324 – Malware Analysis</span>
+          <span class="edu-tag">SIT325 – Advanced Network Security</span>
+          <span class="edu-tag">SIT327 – Network Forensics</span>
+          <span class="edu-tag">SIT379 – Ethical Hacking</span>
+          <span class="edu-tag">SIT782 – Team Project (B): Execution &amp; Delivery (Capstone)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head reveal">
+      <span class="section-tag">Alongside my studies</span>
+      <h2>Other Experience</h2>
+      <p>Professional roles I've balanced alongside coursework — included for context and transferable skills, not as the centre of this portfolio. Duration is calculated automatically from each role's start date to today.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot current"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Schedule Coordinator</div><div class="tl-org">Nurse 4 U</div></div>
+            <div class="tl-period current" data-start="2026-01-01" data-end="present">Jan 2026 — Present</div>
+          </div>
+          <div class="tl-duration" data-duration data-start="2026-01-01" data-end="present"></div>
+          <ul class="tl-list">
+            <li>Coordinate daily and forward schedules to support reliable workforce coverage and continuity of care</li>
+            <li>Maintain accurate scheduling records and confidential information in line with privacy and documentation standards</li>
+            <li>Identify coverage gaps and resolve conflicts while considering operational priorities</li>
+          </ul>
+          <span class="tl-relevance"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Transferable: Data Privacy &amp; Access Coordination</span>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div><div class="tl-role">Rostering Coordinator</div><div class="tl-org">Royal Freemasons Coppin Centre</div></div>
+            <div class="tl-period" data-start="2024-06-01" data-end="2026-01-01">Jun 2024 — Jan 2026</div>
+          </div>
+          <div class="tl-duration" data-duration data-start="2024-06-01" data-end="2026-01-01"></div>
+          <ul class="tl-list">
+            <li>Managed shift changes, replacements and short-notice absences in a fast-paced environment</li>
+            <li>Maintained confidential employee and scheduling information with accuracy and discretion</li>
+            <li>Monitored roster accuracy and helped minimise scheduling conflicts and gaps</li>
+          </ul>
+          <span class="tl-relevance"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Transferable: Documentation, Compliance &amp; Confidentiality</span>
         </div>
       </div>
     </div>
@@ -667,7 +676,7 @@
 
 <footer>
   <p>&copy; <span id="year"></span> Barbie Mahajan. All rights reserved.</p>
-  <p class="avail">Cybersecurity · Governance, Risk &amp; Compliance · Systems Coordination</p>
+  <p class="avail">Digital Forensics · Malware Analysis · Network Security · Ethical Hacking</p>
 </footer>
 
 <div class="to-top" id="toTop">
@@ -754,8 +763,8 @@
   }, {threshold:0.12});
   revealEls.forEach(function(el){ revealObserver.observe(el); });
 
-  /* ---------------- Typing effect for role (cybersecurity-led) ---------------- */
-  var roles = ['Bachelor of Cybersecurity Student', 'Aspiring Security & Compliance Professional', 'Scheduling & Rostering Coordinator'];
+  /* ---------------- Typing effect for role (cybersecurity coursework led) ---------------- */
+  var roles = ['Bachelor of Cybersecurity Student', 'Digital Forensics & Malware Analysis', 'Aspiring Cybersecurity Professional'];
   var roleEl = document.getElementById('typedRole');
   var ri = 0, ci = 0, deleting = false;
   function typeLoop(){
@@ -797,7 +806,7 @@
   });
   document.getElementById('statTotalExp').textContent = formatDuration(totalMonths);
 
-  /* ---------------- Skills data + filter (security-led) ---------------- */
+  /* ---------------- Skills data + filter (security & technical led) ---------------- */
   var iconPaths = {
     lock: '<rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>',
     check: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>',
@@ -810,18 +819,25 @@
     laptop: '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="21" x2="22" y2="21"></line>',
     layers: '<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>',
     users: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>',
-    chat: '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>'
+    chat: '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>',
+    search: '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>',
+    target: '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>',
+    code: '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>'
   };
   var skills = [
     /* Security & Compliance — leads */
+    {name:'Digital Forensics & Investigation', cat:'security', icon:'search'},
+    {name:'Malware Analysis (Ghidra)', cat:'security', icon:'zap'},
+    {name:'MITRE ATT&CK Framework', cat:'security', icon:'target'},
+    {name:'Security Misconfiguration Review', cat:'security', icon:'lock'},
     {name:'Privacy & Confidentiality', cat:'security', icon:'lock'},
     {name:'Documentation & Compliance', cat:'security', icon:'check'},
-    {name:'Accurate Data Recordkeeping', cat:'security', icon:'database'},
-    {name:'Risk-Aware Decision Making', cat:'security', icon:'shield'},
     /* Technical */
-    {name:'Digital Rostering Systems', cat:'tech', icon:'layers'},
-    {name:'Microsoft Office & Digital Tools', cat:'tech', icon:'laptop'},
-    {name:'Systems Data Accuracy', cat:'tech', icon:'database'},
+    {name:'Network Security & Automation (Python)', cat:'tech', icon:'layers'},
+    {name:'Network Forensics', cat:'tech', icon:'database'},
+    {name:'Ethical Hacking / Penetration Testing', cat:'tech', icon:'code'},
+    {name:'Git / PR Workflow & Code Review', cat:'tech', icon:'check'},
+    {name:'Evidence-Based Investigation & Reporting', cat:'tech', icon:'search'},
     /* Coordination */
     {name:'Staff Rostering & Scheduling', cat:'coordination', icon:'calendar'},
     {name:'Shift Allocation & Coverage', cat:'coordination', icon:'clock'},
@@ -830,7 +846,6 @@
     /* Communication */
     {name:'Stakeholder Communication', cat:'people', icon:'users'},
     {name:'Conflict Resolution', cat:'people', icon:'chat'},
-    {name:'Employee Relations', cat:'people', icon:'users'},
     {name:'Clear Reporting & Escalation', cat:'people', icon:'chat'}
   ];
   var grid = document.getElementById('skillsGrid');
